@@ -1,0 +1,7 @@
+streamlit
+numpy
+wordcloud
+matplotlib
+urllib
+requests
+PIL
