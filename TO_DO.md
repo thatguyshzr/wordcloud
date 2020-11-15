@@ -1,5 +1,7 @@
 # Wordcloud generator
 
+- [ ] Front-end in html
+
 - [ ] upload custom text: if text ends with .txt, then read
 
 - [ ] link on image
@@ -9,8 +11,8 @@
 - [ ] Deploy
     * [x] Procfile
     * [x] setup.sh
-    * [ ] requirement.txt
-    * [ ] upload to github
+    * [x] requirements.txt
+    * [x] upload to github
     * [ ] deploy to heroku
 
 - [x] change text color with gradient
