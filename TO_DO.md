@@ -1,19 +1,36 @@
 # Wordcloud generator
 
-- [ ] Front-end in html
+- [ ] Front-end in html in new branch
+    * [x] graph in plotly: plotly creates plotly object. not image. cant download image.
+    * [ ] dropdown value keeps changing to default
+    * [x] put the button at the bottom. Only one needed.
+    * [ ] radio button updates image when changed
+    * [ ] replaced values stay after refresh: add reset to default button 
 
-- [ ] upload custom text: if text ends with .txt, then read
+- [ ] question mark icon for suggestion
 
-- [ ] link on image
+- [ ] Add code for custom text: should overwrite inbuilt alice text
+
+- [ ] reset to default button
+
+- [ ] replace multiple words
+
+- [ ] name on image
 
 - [ ] Add docstring to wc_function()
 
-- [ ] Deploy
+- [ ] to do markdown in url.com/todo
+
+- [x] link to github and suggestion mail
+
+- [x] shakespeare and charles dicken txt
+
+- [x] Deploy streamlit
     * [x] Procfile
     * [x] setup.sh
     * [x] requirements.txt
     * [x] upload to github
-    * [ ] deploy to heroku
+    * [x] deploy to heroku
 
 - [x] change text color with gradient
 
@@ -25,7 +42,6 @@
     * flower
 
 - [x] replace word in wordcloud
-    * string = string.replace("word_in_cloud", "new_word")
 
 - [x] output image size changable
 
