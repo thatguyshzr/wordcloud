@@ -1,5 +1,5 @@
 numpy
 wordcloud
 requests
-PIL
+Pillow==2.2.1
 Flask
