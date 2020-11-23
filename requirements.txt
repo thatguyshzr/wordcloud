@@ -3,3 +3,5 @@ wordcloud
 requests
 Pillow==2.2.1
 Flask
+gunicorn
+Jinja2
