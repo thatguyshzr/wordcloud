@@ -1,6 +1,5 @@
 numpy
 wordcloud
-urllib
 requests
 PIL
 Flask
