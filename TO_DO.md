@@ -9,13 +9,14 @@
 
 - [ ] question mark icon for suggestion
 
-- [ ] Add code for custom text: should overwrite inbuilt alice text
+- [x] Add code for custom text: should overwrite inbuilt alice text
+    * [ ] might have to remove stopwords for this
 
 - [ ] reset to default button
 
 - [ ] replace multiple words
 
-- [ ] name on image
+- [x] name on image
 
 - [ ] Add docstring to wc_function()
 
