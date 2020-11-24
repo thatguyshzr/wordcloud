@@ -4,7 +4,6 @@
     * [x] graph in plotly: plotly creates plotly object. not image. cant download image.
     * [ ] dropdown value keeps changing to default
     * [x] put the button at the bottom. Only one needed.
-    * [ ] radio button updates image when changed
     * [ ] replaced values stay after refresh: add reset to default button 
 
 - [ ] question mark icon for suggestion
