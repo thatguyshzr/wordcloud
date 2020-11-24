@@ -1,7 +1,7 @@
-numpy
-wordcloud
-requests
-Pillow==2.2.1
-Flask
+numpy==1.18.1
+wordcloud==1.8.1
+requests==2.25.0
+Pillow==8.0.1
+Flask==1.1.2
 gunicorn
 Jinja2
