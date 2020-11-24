@@ -2,7 +2,7 @@ from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import urllib
 import matplotlib.pyplot as plt
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 import requests
 import base64
 from io import BytesIO
@@ -42,8 +42,14 @@ def wc_function(text, stop_words = None, mask= 'rect.jpg', size = (400,400),
         image_colors = ImageColorGenerator(color_array)
         wc.recolor(color_func=image_colors)
     # color code ends
-    # return np.array(wc)     # returns array
-    return Image.fromarray(np.array(wc))
+    font_color= {'#E7E7EC': '#2F2D2D', '#2F2D2D':'#E7E7EC'}
+    img = Image.fromarray(np.array(wc))
+    d1 = ImageDraw.Draw(img)
+    myFont = ImageFont.truetype(r'static/fonts/GIL_____.TTF')
+    d1.text((5, img.size[0]-15), "https://wordcloud-shzr.herokuapp.com/",
+            font= myFont, fill= font_color.get(bg_color))
+    
+    return img
 
 def temp_img(wc_image):
     im = wc_image
