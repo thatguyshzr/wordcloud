@@ -21,8 +21,7 @@ def get_text(url= 'alice'):
     return alice
 
 def wc_function(text, stop_words = None, mask= 'rect.jpg', size = (400,400),
-                replace_word = ['',''], gradient = None, bg_color= '#E7E7EC',
-                custom_text = ''):
+                replace_word = ['',''], gradient = None, bg_color= '#E7E7EC'):
     image = Image.open('shapes/' + mask).resize(size)
     mask =np.array(image)
 
@@ -32,11 +31,8 @@ def wc_function(text, stop_words = None, mask= 'rect.jpg', size = (400,400),
     wc = WordCloud(background_color= bg_color, max_words=1000, mask = mask,
                stopwords=stopwords)
 
-    if custom_text == '':
-        text = get_text(text)
-        text = text.replace(replace_word[0], replace_word[1])
-    else:
-        text = custom_text
+    text = get_text(text)
+    text = text.replace(replace_word[0], replace_word[1])
     wc.generate(text)   # generate word cloud
     # color code
     gradient= str(gradient)
