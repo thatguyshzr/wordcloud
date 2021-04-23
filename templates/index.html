@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Wordcloud by Shzr</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../static/css/normalize.css">
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../static/images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+
+      <div class="one-third column" style="margin-top: 10%">
+        <form action= "/" method="POST">
+          <!-- shape -->
+          <label for="shape">Shape</label>
+          <select class="u-full-width" id="shape" name= "shape_name">
+            <option value="rect.jpg">Default</option>
+            <option value="lady.jpg">Lady</option>
+            <option value="apple.jpg">Apple</option>
+            <option value="rabbit.jpg">White Rabbit</option>
+          </select>
+
+          <!-- color -->
+          <label for="colour">Colour</label>
+          <select class="u-full-width" id="colour" name= "colour_name">
+            <option value= 'None'>Default</option>
+            <option value="black.jpg">Black Beacon</option>
+            <option value="gradient2.jpg">Blue Bird</option>
+            <option value="gradient1.jpg">Orange Oscillator</option>
+            <option value="gradient3.jpg">Pink Paranoia</option>
+            <option value="gradient.jpg">Purple Play</option>
+            <option value="white.jpg">White Whim</option>
+          </select>
+          
+          <!-- background -->
+          <div class="btn-group" data-toggle="buttons">
+            <label for="bg">Background Colour</label>
+            <label class="btn btn-primary active">
+              <input type="radio" name="bg" value='#E7E7EC' checked> Light
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="bg" value='#2F2D2D'> Dark
+            </label>
+          </div>
+
+          <!-- size -->
+          <label for="size">Size (pixels)</label>
+          <select class="u-full-width" id="size" name= "size_name">
+            <option value="400">400x400</option>
+            <option value="600">600x600</option>
+            <option value="800">800x800</option>
+            <option value="1000">1000x1000</option>
+          </select>
+
+          <!-- replace -->
+          <label for="replace">Replace</label>
+          <input class="u-full-width" type="text" placeholder="Word to replace" name="to_replace">
+          <label for="replace_with">with</label>
+          <input class="u-full-width" type="text" placeholder="Replace it with" name="replace_with">
+
+          <!-- text -->
+          <label for="text">Predefined Text</label>
+          <select class="u-full-width" id="text" name= "text_name">
+            <option value="alice">Alice in Wonderland</option>
+            <option value="tale">Tale of Two Cities</option>
+          </select>
+
+          <!-- custom text -->
+          <label for="text">Custom Text</label>
+          <input class="u-full-width" type="text" id="custom" name="cust_text", placeholder= 'Your text here.'>
+          
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      
+      <div class="two-thirds column" style="margin-top: 10%">
+        <h4>Wordcloud</h4>
+        <p>Made by Shzr</p>
+        <form action= "/" method="post">
+          <img src="{{ user_image }}" alt="User Image">
+        </form>
+        <a href="mailto:shzr&#64;protonmail.com?subject=Wordcloud%20suggestion">Got a suggestion? Click here.</a>
+        <br><a href="https:www.github.com/thatguyshzr">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https:www.instagram.com/thatguyshzr">Instagram</a>
+        <br><p><small>Need help with: Submit shouldn't reset dropdown menu.</small></p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
